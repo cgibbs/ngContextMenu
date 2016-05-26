@@ -120,7 +120,7 @@
                             contextMenu.cancelAll();
                             event.stopPropagation();
                             event.preventDefault();
-                            scope.position = { x: event.clientX, y: event.clientY };
+                            scope.position = { x: event.currentTarget.offsetLeft, y: event.currentTarget.offsetTop };
 
                         } else {
 
